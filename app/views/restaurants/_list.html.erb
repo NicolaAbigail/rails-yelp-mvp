@@ -1,0 +1,8 @@
+<div>
+  <% restaurants.each do |restaurant| %>
+    <li><%= restaurant.name %></li>
+    <p>
+      <%= link_to "Show this restaurant", restaurant_path(restaurant) %>
+    </p>
+  <% end %>
+</div>
